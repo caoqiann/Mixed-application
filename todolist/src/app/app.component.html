@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+  <input type="text" [(ngModel)]="data">
+  <button (click)="add()">添加数据</button>
+  <h1>正在进行{{dataArr.length}}</h1>
+  <ul>
+    <li *ngFor="let item of dataArr;let i = index">
+      <input type="checkbox"(change)="changeData(i)">{{item}}
+      <button>删除</button>
+    </li>
+  </ul>
+  <h1>已经完成{{dataA.length}}</h1>
+  <ul>
+    <li *ngFor="let item of dataA">
+      <input type="checkbox" checked>{{item}}
+      <button>删除</button>
+    </li>
+  </ul>  
+  
+</div>
+
+
