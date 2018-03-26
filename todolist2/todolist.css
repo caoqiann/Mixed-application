@@ -1,0 +1,30 @@
+ul,li{
+    list-style: none;
+}
+li{
+    width: 17%;
+    font-size: 30px;
+    float: left;
+    margin: 1.5%;
+    height: 330px;
+    background: rgb(245, 220, 220);
+}
+
+.pic{
+    width: 100%;
+    height: 75%;
+}
+
+.price{
+    margin:0 10px;
+    font-size: 0.6em;
+    font-weight: bolder;
+    text-align: left;
+    color: red;
+}
+
+.goodsname{
+   margin:0 10px;
+   font-size: 0.5em;
+   text-align: left;
+}
