@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <img src="../../assets/imgs/tao.jpg" alt="">
+
+    <ion-list>
+
+        <ion-item>
+          <ion-input type="text" placeholder="手机号/邮箱/会员名" [(ngModel)]="txt"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="password" placeholder="密码" [(ngModel)]="pwd"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+      <a href="#">忘记密码</a>
+      <button ion-button id="btn" color="danger" round  (click)="showAlert()">登录</button>
+</ion-content>
