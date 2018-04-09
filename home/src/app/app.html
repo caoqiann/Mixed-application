@@ -1,0 +1,26 @@
+
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>这里是侧边栏</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <button ion-item (click)="openPage(homePage)">
+          Helloworld
+        </button>
+        <button ion-item (click)="openPage(friendsPage)">
+          Helloworld
+        </button>
+        <button ion-item (click)="openPage(eventsPage)">
+          Helloworld
+        </button>
+        <button ion-item (click)="closeMenu()">
+          Helloworld
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-nav #content [root]="rootPage"></ion-nav>
