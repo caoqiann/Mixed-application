@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { MessagePage } from '../pages/message/message';
+import { MinePage } from '../pages/mine/mine';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +22,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    MessagePage,
+    MinePage
   ],
   imports: [
     BrowserModule,
@@ -33,11 +37,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    MessagePage,
+    MinePage
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen,  
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
