@@ -10,12 +10,14 @@ import { Platform, ToastController, App, Tabs } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  loginPage;
   @ViewChild(Slides) slides: Slides;
   constructor(public platform: Platform,
     public appCtrl: App,
     public toastCtrl: ToastController,public modalCtrl:ModalController,public navCtrl: NavController) {
       this.platform.ready().then(() => {
         this.registerBackButtonAction(null);
+        this.loginPage = LoginPage;
       });
   }
    //控制硬件返回按钮是否触发，默认false
@@ -83,21 +85,9 @@ export class HomePage {
   go(){
     this.slides.slideTo(2);
   }
-  goButton(){
-  }
+
   goLogin(){
     this.navCtrl.push(LoginPage);
   }
-  list = [1,2,3,4,5,6,7,8,9,10];
-  del(i){
-    this.list.splice(i,1);
-  }
-  goTop(i){
-    this.list.unshift(this.list[i]);
-    this.list.splice(i+1,1);
-  }
-  modal(){
-    let profileModal = this.modalCtrl.create(LoginPage);
-    profileModal.present();
-  }
+  
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { SettingPage } from '../setting/setting';
+import { App } from 'ionic-angular';
 /**
  * Generated class for the MinePage page.
  *
@@ -14,12 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'mine.html',
 })
 export class MinePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  settingPage;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private app:App) {
+    this.settingPage = SettingPage;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MinePage');
   }
-
+  onClick() {
+    this.app.getRootNav().push(SettingPage);
+  }
 }

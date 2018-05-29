@@ -5,7 +5,6 @@ import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { MessagePage } from '../message/message';
 import { MinePage } from '../mine/mine';
-
 @Component({
   templateUrl: 'tabs.html'
 })

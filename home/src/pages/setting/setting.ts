@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { LoginPage } from '../login/login';
+import { App } from 'ionic-angular';
 /**
  * Generated class for the SettingPage page.
  *
@@ -14,12 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'setting.html',
 })
 export class SettingPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  loginPage;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private app:App) {
+    this.loginPage = LoginPage;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingPage');
   }
-
+  goLogin() {
+    this.navCtrl.push(LoginPage);
+  }
 }

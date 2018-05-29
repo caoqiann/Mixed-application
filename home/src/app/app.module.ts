@@ -14,6 +14,8 @@ import { MinePage } from '../pages/mine/mine';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SettingPage } from '../pages/setting/setting';
+import { RegisterPage } from '../pages/register/register';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     LoginPage,
     MessagePage,
-    MinePage
+    MinePage,
+    SettingPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     LoginPage,
     MessagePage,
-    MinePage
+    MinePage,
+    SettingPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,108 @@
+page-register {
+    #title{
+        margin-left: 25%;
+    }
+      .toolbar-title{
+          margin-top: 5%;
+          color: white;
+          height: 30px;
+          font-size: 25px;
+          
+         
+      }
+      #bg{
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+      }
+      #surface{
+          width: 100%;
+          height:100%;
+          background-color:rgba($color: #000000, $alpha: 0.7);
+          
+  }
+  #list{
+      margin-top: 20%;
+      margin-left: 10%;
+      width: 80%;
+      background-color: transparent;
+  }
+  .item{
+      width: 100%;
+      background-color: transparent;
+      border: none;
+  }
+  #login{
+      margin-top: 8%;
+      width: 100%;
+      background-color:  #fedb47;
+      color: black;
+      font-weight: bold;
+  }
+  #register{
+      margin-top: 5%;
+      width: 100%;
+      background-color: transparent;
+      border:2px solid #fedb47;
+      color:#fedb47;
+      font-weight: bold;
+  }
+  #phone{
+      margin-left: 2%;
+      color: white;
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid white;
+      font-weight: bold;
+  }
+  #number{
+      margin-left: 2%;
+      color: white;
+      width: 60%;
+      margin-top: 10%;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+      }
+  #password{
+          margin-left: 2%;
+          color: white;
+          width: 100%;
+          margin-top: 10%;
+          border: none;
+          background-color: transparent;
+          border-bottom: 2px solid white;
+          font-weight: bold;
+          }
+  #repassword{
+              margin-left: 2%;
+              color: white;
+              width: 100%;
+              margin-top: 10%;
+              border: none;
+              background-color: transparent;
+              border-bottom: 2px solid white;
+              font-weight: bold;
+          }
+  #register{
+                  margin-top: 8%;
+                  width: 100%;
+                  background-color:  #fedb47;
+                  color: black;
+                  font-weight: bold;
+              }
+      #by{
+          width: auto;
+          margin-right: 0px;
+          font-weight: bold;
+      }
+      p{
+          color: white;
+          text-align: center;
+          font-size: 18px;
+      }
+     .item-cover{
+          background-color:  #fedb47;
+      }
+}

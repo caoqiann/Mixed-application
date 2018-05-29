@@ -2,10 +2,11 @@
   <ion-navbar color="yel" id="head">
         <p menuToggle id="btn">设置</p>
     <ion-title>            
-            <h3>资芽 </h3>         
+            <img src="../../assets/imgs/ziya.png" class="logo">         
     </ion-title>
   </ion-navbar>
 </ion-header>
+
 
 <ion-content padding>
 
@@ -106,11 +107,39 @@
             <div class="price" item-end><h3 style="color:red">500万</h3><p>总金额</p></div>
             <div class="price" item-end><h3 style="color:red">300万</h3><p>转让价</p></div>
         </button>
+        <button ion-item>
+            <ion-thumbnail item-start>
+                <img src="../../assets/imgs/a.gif" alt="">
+            </ion-thumbnail>
+            <p>地区：北京</p>
+            <p>来源：银行</p>
+            <p>资产类型：抵押</p>
+            <div class="price" item-end><h3 style="color:red">500万</h3><p>总金额</p></div>
+            <div class="price" item-end><h3 style="color:red">300万</h3><p>转让价</p></div>
+        </button>
+        <button ion-item class="li2">
+            <ion-thumbnail item-start>
+                <img src="../../assets/imgs/b.gif" alt="">
+            </ion-thumbnail>
+            <p>地区：北京</p>
+            <p>来源：银行</p>
+            <p>资产类型：抵押</p>
+            <div class="price" item-end><h3 style="color:red">500万</h3><p>总金额</p></div>
+            <div class="price" item-end><h3 style="color:red">300万</h3><p>转让价</p></div>
+        </button>
+        <button ion-item class="li2">
+            <ion-thumbnail item-start>
+                <img src="../../assets/imgs/c.gif" alt="">
+            </ion-thumbnail>
+            <p>地区：北京</p>
+            <p>来源：银行</p>
+            <p>资产类型：抵押</p>
+            <div class="price" item-end><h3 style="color:red">500万</h3><p>总金额</p></div>
+            <div class="price" item-end><h3 style="color:red">300万</h3><p>转让价</p></div>
+        </button>
 
         <!-- 下拉加载 -->
-        <ion-list>
-            <ion-item *ngFor="let item of items">{{item}}</ion-item>
-          </ion-list>
+        
           <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
             <ion-infinite-scroll-content></ion-infinite-scroll-content>
           </ion-infinite-scroll>

@@ -1,3 +1,60 @@
 page-contact {
+    .header{
+        color: dark;
+        text-align: center;
+    }
+    #slide{
+        height: auto;
+    }
+    #btn{
+        margin-left: 5%;
+    }
+    ion-segment{
+        margin: 4% auto;
+    }
+    .it{
+        width: 20%;
+        float: left;
+        margin-left: 6.65%;     
+        height: 20%;   
+    }
+    #item img{
+        width: 35px;
+        height: 35px;   
+        margin-top: 20%; 
+        margin-left: 25%;   
+    }
+    #item p{
+        margin-bottom: 8%;
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+    #king img{
+        transform: scale(0.2);
+        margin-left: -21%;
+        margin-top: -22.5%;       
+    }
+    #sp{
+        margin-left: 20%;
+        margin-top: -34%;   
+        font-size: 20px;    
+    }
+    #king{
+        height: 50px;
+        // border: 0.1px solid gray;
+        margin-top: -5%;
+    }
+    .price{
+        float: left;
 
+    }
+    
+    #ttt{
+        float: left;
+       height: 40px;
+       margin-left: 10px;
+    }
+    #titles{
+        margin-top:10px;
+    }
 }

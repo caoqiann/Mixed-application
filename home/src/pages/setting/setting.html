@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>setting</ion-title>
+  <ion-navbar color="yel">
+    <ion-title>设置</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,31 @@
 
 <ion-content padding>
 
+    <button ion-item>
+        <ion-label>图片质量设置</ion-label>
+      </button>
+      <button ion-item>
+            <ion-label>自动播放视频设置</ion-label>
+        </button>
+        <button ion-item>
+              <ion-label>消息提醒设置</ion-label>
+          </button>
+        <ion-item>
+            <ion-label>开启听筒模式</ion-label>
+            <ion-toggle></ion-toggle>
+        </ion-item>
+        <button ion-item>
+            <ion-label>关于资芽</ion-label>
+        </button>
+        <button ion-item>
+            <ion-label>资芽公约（免责声明等）</ion-label>
+        </button>
+        <button ion-item>
+            <ion-label>把资芽推荐给朋友</ion-label>
+        </button>
+        <button ion-item>
+            <ion-label>清除缓存</ion-label>
+        </button>
+
+        <button ion-button color="yel" class="out" (click)="goLogin()">退出登录</button>
 </ion-content>
